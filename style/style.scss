@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/hero.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.parallax-el{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/upper.png) no-repeat 45% 45%;
+    background-size: cover;
+    top: 20%;
+}
+.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 35%;
+    background: url(../img/text.png) no-repeat 50% 50%;
+    //Change the below for phone size
+    //background: url(../img/text.png) no-repeat 75% 75%;
+    background-size: cover;
+    mix-blend-mode: overlay;
+    
+}
+.clouds{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/clouds.png) no-repeat 45% 45%;
+    background-size: cover;
+    opacity: 0.75;
+}
+.whitespace{
+    width: 50%;
+    height: 50vh;
+}
+.content{
+    position: absolute;
+    top: 150%;
+    width: 80%;
+    left: 10%;
+    margin-bottom: 10%;
+    padding: 20px;
+}
+
+p{
+    line-height: 40px;
+    text-align: justify;
+    color: rgba($color: #000000, $alpha: .75)
+}
+.navbar{
+    color: black;
+    .navbar-brand{
+        color: black;
+    }
+}
+
+.carousel-control-next-icon{
+    color: #000000;
+}
