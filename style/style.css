@@ -18,6 +18,11 @@
      object-fit: cover;
 }
 
+.navbar {
+  position: absolute;
+  z-index: 999;
+}
+
 .carousel-control-prev {
   position: absolute;
   z-index: 999;
@@ -34,7 +39,7 @@
   height: 100%;
   background: url(../img/upper.png) no-repeat 45% 45%;
   background-size: cover;
-  top: 20%;
+  top: 15%;
   z-index: 2;
 }
 
@@ -60,11 +65,6 @@
   z-index: 2;
 }
 
-.whitespace {
-  width: 50%;
-  height: 50vh;
-}
-
 .content {
   position: absolute;
   top: 150%;
@@ -78,5 +78,105 @@ p {
   line-height: 40px;
   text-align: justify;
   color: rgba(0, 0, 0, 0.75);
+}
+
+.services-section {
+  background: url(bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.inner-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.border {
+  width: 160px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 40px auto;
+}
+
+.services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service-box {
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.service-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.service-icon i {
+  line-height: 70px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  font-size: 26px;
+}
+
+.service-box:hover .service-icon {
+  background: #82ccdd;
+  color: #ddd;
+}
+
+.service-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+  .service-box {
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-box {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .service-box {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
